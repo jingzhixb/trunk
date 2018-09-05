@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\Youxun\\trunk\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\layout\\notification_template_part_time.xml"
+    }
+]

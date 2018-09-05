@@ -1,0 +1,1 @@
+include ':app', ':CallLib', ':IMLib', ':IMKit', ':share', ':baidumap', ':alipay', ':wcpay', ':ui', ':netre', ':city', ':te'

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/tou1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.zhuye.ershoufang.weidtet.RoundedCornerImageView
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tou"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/white"
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/tou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/back"
+            android:src="@mipmap/jiantou"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="#999"
+            android:textSize="@dimen/sp_15"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

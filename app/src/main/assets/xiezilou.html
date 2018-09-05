@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商铺写字楼详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/xiezi-detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/ershou-detail.css" />
+	</head>
+	<!--banner-->
+	<div class="banner">
+		<div class="bann-s swiper-container">
+			<div class="swiper-wrapper mui-content-padded m-0">
+				<a class="swiper-slide" href="javascript:;">
+					<img src="images/jiaju.png" data-preview-src="" data-preview-group="1">
+				</a>
+				<a class="swiper-slide" href="javascript:;">
+					<img src="images/jiaju.png" data-preview-src="" data-preview-group="1">
+				</a>
+				<a class="swiper-slide" href="javascript:;">
+					<img src="images/jiaju.png" data-preview-src="" data-preview-group="1">
+				</a>
+			</div>
+			<span class="fenye c-f font-15"><span class="slide-active">1</span>/<span class="slide-num">4</span></span>
+		</div>
+		<div class="fanhui clear">
+			<!--mui-action-back-->
+			<img src="images/jiantou.png" class="f-l back " />
+			<img src="images/bg-fenxiang.png" class="f-r share" />
+			<img src="images/bg-shou.png" class="f-r shoucang" />
+		</div>
+	</div>
+	<!--详情内容-->
+	<div class="detail_mess b-f">
+		<div class="clear detail_mess_title">
+			<span class="f-l title">正商河禹洲</span>
+		</div>
+
+		<div class="detail_mess_money">
+			<span><span class="shoujia">售价</span> : <em class="price">9900</em>元/m²</span>
+		</div>
+		<div class="detail_mess_text clear">
+			<span class="f-l">面积 :</span>
+			<span class="f-l"><span class="mianji">12313</span>m/²</span>
+		</div>
+		<div class="detail_mess_money">
+			<span><span class="fangshi">售价</span> : <em class="sanshou">9900</em>元/m²</span>
+		</div>
+		<!--<div class="detail_mess_text clear">-->
+			<!--<span class="f-l">建筑面积 :</span>-->
+			<!--<span class="f-l">12313m/²</span>-->
+		<!--</div>-->
+		<div class="detail_mess_text clear">
+			<span class="f-l">地址 :</span>
+			<span class="f-l address">惠济-惠济区  郑州市惠济区江山路</span>
+		</div>
+	</div>
+	<!--电话-->
+	<div class="detail_phone clear b-f">
+		<div class="detail_phone_left f-l">
+			<p class="mobile">400-800-6565</p>
+			<p>最新政策，更多优惠详情，请致电售楼处</p>
+		</div>
+		<div class="detail_phone_right f-r call" >
+			<img src="images/dianhua.png" />
+		</div>
+	</div>
+
+
+	<!--房源概况-->
+	<div class="detail_gaikuo b-f">
+		<div class="detail_gaikuo_title clear">
+			<span class="f-l">房源概况</span>
+			<span class="f-r create_time">发布</span>
+		</div>
+		<div class="detail_gaikuo_images clear">
+			<div class="detail_gaikuo_images_left f-l">
+				<img src="" class="face"/>
+			</div>
+			<div class="detail_gaikuo_images_right f-l">
+				<p><span class="contact"></span><em class="gongsi">中环房产</em></p>
+				<div class="lists_left_star clear">
+							<div class="star_lists_shi f-l">
+
+					</div>
+					<div class="star_lists_shi f-l">
+
+					</div>
+					<div class="star_lists_shi f-l">
+
+					</div>
+					<div class="star_lists f-l">
+
+					</div>
+					<div class="star_lists f-l">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="detail_gaikuo_referral">
+			<p>核心卖点</p>
+			<!--<p>如果你无法简洁的表达你的想法，那只说明你还不够了 解它。</p>-->
+			<p class="maidian"></p>
+		</div>
+		<div class="detail_gaikuo_referral">
+			<p>业主心态</p>
+			<p class="xintai"></p>
+		</div>
+		<div class="detail_gaikuo_referral">
+			<p>小区配套</p>
+			<p class="peitao">如果你无法简洁的表达你的想法，那只说明你还不够了 解它。</p>
+		</div>
+	</div>
+	<!--底部按钮-->
+	<div class="detail_bottom">
+		<div class="detail_gou f-l">
+			<img src="images/45.png" class="face" />
+			<div class="">
+				<span class="gongsi">wode</span>
+				<span>我的</span>
+			</div>
+		</div>
+		<!-- @click="chat" -->
+		<div class="detail_wei f-l chat"  >
+			<img src="images/weiliao.png" />
+			<span>微聊</span>
+		</div>
+		<!--//onclick="window.location.href='tel:10086'"-->
+		<!-- @click="phone" -->
+		<div class="detail_shou f-l phone call" data_id="1"  >
+			<img src="images/dianhua2.png" />
+			<span>免费通话</span>
+		</div>
+	</div>
+	<body>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        
+		<script type="text/javascript">
+			
+
+			$(function(){
+                //console.log('sadf')
+
+                var tr = Object
+
+                var url = 'http://jd.zyeo.net/index.php/app/house/cf_detail'
+
+                var id = java.getId();
+
+                var token = java.getToken1()
+
+                var types = java.gettype();
+
+
+				// var id = 74
+				// var  token = ''
+				// var types = 1
+
+				var imgurl = 'http://jd.zyeo.net/attachs/'
+
+
+
+                var cang = 0
+
+				var type = parseInt(types)
+				if(type ==1){
+					$('.shoujia').text('售价')
+                    $('.fangshi').text('单位房价')
+				}else if(type==2){
+                    $('.shoujia').text('租金')
+                    $('.fangshi').text('支付方式')
+				}
+
+
+
+				// var id = java.getId()
+
+
+                   // var token ="73402641d30b54b1f40c79777a0cba4e"
+                    $.ajax({
+                        url:url,
+                        type:'post',
+                        data:{
+                            "life_id":id,
+                            "token":token
+                        },
+                        datatype:'json',
+                        success:function(data){
+
+                        var da = JSON.parse(data)
+
+                        if(da.code==200){
+                            var pop = da.data
+                            tr = pop
+
+
+							cang = pop.cang
+
+                            if(cang ==0){
+                                $(".shoucang").attr("src","images/bg-shou.png")
+                            }else{
+                                $(".shoucang").attr("src","images/shouf9.png")
+                            }
+
+                            $(".title").text(pop.title)
+
+                            $(".price").text(pop.num1)
+
+                            $(".mianji").text(pop.num2)
+
+                            
+                            $(".sanshou").text(pop.num1)
+
+                            $(".address").text(pop.addr)
+
+                            $(".mobile").text(pop.mobile)
+
+
+                            $(".face").attr("src",imgurl+pop.face)
+
+                            $(".gongsi").text(pop.shop)
+
+                            $(".create_time").text(pop.create_time+'发布')
+
+                            // $(".maidian").text(pop.shop) 无数据
+                            //
+                            // $(".xintai").text(pop.shop)
+                            //
+                            // $(".peitao").text(pop.shop)
+
+
+                        }
+                       
+
+                    console.log(da)
+                        },
+                        error:function(){
+                            console.log("asd")
+                        }
+
+
+                    });
+
+
+
+                $('.chat').click(function(){
+                    // console.log("share")
+                    java.chat(tr.user_id,tr.shop)
+                })
+
+
+                    $('.share').click(function(){
+                        // console.log("share")
+                        java.share()
+                    })
+                    
+                    $('.call').click(function(){
+                        //console.log(tr.mobile)
+                        java.callphone(tr.mobile)
+                    })
+
+
+                    $('.call2').click(function(){
+                        //console.log(tr.mobile)
+                        java.callphone(tr.mobile)
+                    })
+
+
+                    $('.back').click(function(){
+                        //console.log(tr.mobile)
+                        java.finis()
+                    })
+
+                var scurl  = 'http://jd.zyeo.net/index.php/app/index/collect'
+                var quxiao = 'http://jd.zyeo.net/index.php/app/user/del_collect'
+
+                $(".shoucang").click(function(){
+
+
+                    if(cang ==0){
+
+                        //去收藏
+
+
+                        $.ajax({
+                            url:scurl,
+                            type:'post',
+                            data:{
+                                "type":0,
+                                "life_id":id,
+                                "token":token
+                            },
+                            datatype:'json',
+                            success:function (data) {
+                                // console.log(curl)
+                                var da =  JSON.parse(data);
+                                mui.toast(da.message)
+                                if(da.code == 200)	{
+                                    mui.toast(da.message)
+                                    $(".shoucang").attr("src","images/shouf9.png")
+                                    cang = 1
+
+                                    //    thst.cangurl = 'images/shouf9.png'
+                                }else {
+                                    mui.toast(da.message)
+                                }
+                            },
+                            error:function () {
+                                mui.toast("收藏失败")
+                                //console.log('失败')
+                            }
+                        })
+
+                    }else if(cang == 1){
+
+                        //取消
+                        $.ajax({
+                            url:quxiao,
+                            type:'post',
+                            data:{
+                                "type":0,
+                                "life_id":id,
+                                "token":token
+                            },
+                            datatype:'json',
+                            success:function (data) {
+                                console.log(data)
+
+                                var da =  JSON.parse(data);
+                                mui.toast(da.message)
+                                if(da.code ==200)	{
+                                    mui.toast(da.message)
+                                    $(".shoucang").attr("src","images/bg-shou.png")
+                                    // thst.cangurl = 'images/bg-shou.png'
+                                    cang = 0
+                                }else {
+                                    mui.toast(da.message)
+                                }
+                            },
+                            error:function () {
+                                mui.toast("取消失败")
+                                //console.log('失败')
+                            }
+                        })
+                    }
+                })
+
+
+
+
+                        var swiper = new Swiper('.bann-s', {
+                        pagination: '.bann-s .swiper-pagination',
+                        paginationClickable: true,
+                        onInit: function(swiper) {
+                            $(".slide-num").html(swiper.slides.length);
+                        },
+                        onSlideChangeEnd: function(swiper) {
+                            $(".slide-active").html(swiper.activeIndex + 1);
+                        },
+                    });
+                    mui.previewImage();
+                    //列表轮播
+                    var swiper = new Swiper('.building', {
+                        pagination: '.building .swiper-pagination',
+                        slidesPerView: 3.2,
+                        spaceBetween: 15,
+                    });
+                    //收藏
+                    $(".detail_shou").click(function(){
+                    var type = $(this).attr("data_id");
+                    if (type==1) {
+                        $(this).find("img").attr("src","images/shou99.png");
+                        $(this).find("span").text("已收藏").css("color","white");
+                        $(this).attr("data_id","2");
+                    } else{
+                        $(this).find("img").attr("src","images/shou99.png");
+                        $(this).find("span").text("收藏").css("color","white");
+                        $(this).attr("data_id","1");
+                    }
+
+
+
+
+              
+
+			
+
+			})
+		});
+		</script>
+	</body>
+
+</html>

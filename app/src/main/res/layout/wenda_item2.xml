@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+
+        <com.zhuye.ershoufang.weidtet.RoundedCornerImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/toou"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/toou"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:id="@+id/name"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tex"/>
+        <TextView
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:background="@drawable/shape_ju"
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginRight="@dimen/dp_20"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/jusecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热心网友"/>
+
+        <TextView
+             android:layout_alignParentRight="true"
+            android:id="@+id/time"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tex"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:id="@+id/content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tex"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:background="@color/line_color"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_20"></View>
+
+    </RelativeLayout>
+</LinearLayout>

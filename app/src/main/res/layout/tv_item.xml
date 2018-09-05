@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="@dimen/dp_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="30dp">
+    <TextView
+        android:background="@drawable/shape_ju_tv"
+        android:textColor="@color/jusecolor"
+        android:gravity="center"
+        android:text="刚需房"
+        android:id="@+id/item"
+        android:src="@drawable/picture"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+</RelativeLayout>

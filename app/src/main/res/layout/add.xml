@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingBottom="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_15"
+    android:layout_marginLeft="@dimen/dp_15"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:background="@drawable/shape_ju"
+        android:id="@+id/name1"
+        android:text="开始时间"
+        android:singleLine="true"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColorHint="#ccc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@+id/name1"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:background="@drawable/shape_ju"
+        android:id="@+id/name3"
+        android:text="结束时间"
+        android:singleLine="true"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColorHint="#ccc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableRight="@drawable/sanjiao"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:background="@drawable/shape_ju"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/iv"
+        android:id="@+id/name2"
+        android:text="从业经历"
+        android:singleLine="true"
+        android:lines="1"
+        android:textSize="14sp"
+        android:textColorHint="#ccc"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"/>
+</RelativeLayout>

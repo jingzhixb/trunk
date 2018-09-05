@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.ershoufang.ui.activity.me.PaiMaiDetailActivity">
+
+
+
+    <include layout="@layout/header">
+    </include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/banner"
+                    app:banner_pageChangeDuration="1000"
+                    app:banner_pointAutoPlayAble="false"
+                    app:banner_pointContainerBackground="@android:color/transparent"
+                    app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                    app:banner_pointTopBottomMargin="5dp"
+                    app:banner_transitionEffect="alpha" />
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:id="@+id/dizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:text="@string/app_name"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="@dimen/sp_12"
+                        android:text="当前价"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:paddingRight="@dimen/dp_20"
+                        android:id="@+id/qipaiprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/jusecolor"
+                        android:textSize="@dimen/sp_15"
+                        android:text="25000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="@dimen/sp_12"
+                        android:text="开拍时间"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/tv12"
+                        android:paddingRight="@dimen/dp_20"
+                        android:id="@+id/kaipaishijian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:textSize="@dimen/sp_15"
+                        android:text="25000"/>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/baoming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="@dimen/sp_12"
+                        android:text="开拍时间"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tixing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="@dimen/sp_12"
+                        android:text="开拍时间"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/weiguan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="@dimen/sp_12"
+                        android:text="开拍时间"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/line_color">
+
+                </View>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="保证金"/>
+                            <TextView
+                                android:id="@+id/gongsi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="评估价"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="评估价"/>
+                            <TextView
+                                android:id="@+id/zhuying"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="加价幅度"/>
+                            <TextView
+                                android:id="@+id/mendian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/line_color">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#999"
+                            android:textSize="@dimen/sp_12"
+                            android:text="竞卖记录"/>
+                        <TextView
+                            android:layout_toLeftOf="@+id/go"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#999"
+                            android:textSize="@dimen/sp_12"
+                            android:text="全部"/>
+
+                        <ImageView
+                            android:id="@+id/go"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="18dp"
+                            android:layout_height="16dp"
+                            android:src="@mipmap/arrow_right"/>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jinamaijilu"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/line_color">
+                </View>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="75dp">
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="起拍价"/>
+                            <TextView
+                                android:id="@+id/qipaijia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="延时周期"/>
+                            <TextView
+                                android:id="@+id/yanshizhouqi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="竞价规则"/>
+                            <TextView
+                                android:id="@+id/jingjiaguize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="至少一人参加拍卖"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="竞拍周期"/>
+                            <TextView
+                                android:id="@+id/jingpaizhouqi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#999"
+                                android:textSize="@dimen/sp_12"
+                                android:text="房屋面积"/>
+                            <TextView
+                                android:id="@+id/fangwumianji"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#666"
+                                android:textSize="@dimen/sp_12"
+                                android:text="服务年限"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/line_color">
+                </View>
+
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:textSize="@dimen/sp_15"
+                        android:text="竞买须知"/>
+                    <ImageView
+                        android:id="@+id/xuzhigo"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/arrow_right"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/line_color">
+                </View>
+
+                <TextView
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="@dimen/sp_12"
+                    android:text="标的物介绍"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/biaodiwu">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999"
+                    android:textSize="@dimen/sp_12"
+                    android:text="所在地"/>
+
+                <TextView
+                    android:id="@+id/zuozaidi"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_12"
+                    android:text="标的物介绍"/>
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+
+                </com.baidu.mapapi.map.MapView>
+            </LinearLayout>
+
+
+        </ScrollView>
+        <Button
+            android:textSize="@dimen/sp_15"
+            android:id="@+id/jiaobaozhengjin"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="报名交保证金"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <RelativeLayout
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/tixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tixingjiao"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:id="@+id/textt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/app_name"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

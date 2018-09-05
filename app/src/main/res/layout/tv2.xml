@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:minWidth="40dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:background="@drawable/shape_green_tv"
+        android:textColor="@color/grenn"
+        android:gravity="center"
+        android:text="刚需房"
+        android:layout_marginTop="3dp"
+        android:id="@+id/item"
+        android:src="@drawable/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

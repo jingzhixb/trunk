@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Youxun\\trunk\\CallLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\CallLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\CallLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\trunk\\CallLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\b2ab051f84feaa60017c87eb753769ef\\res\\drawable\\notification_tile_bg.xml"
+    }
+]

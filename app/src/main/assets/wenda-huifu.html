@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>问题详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/per1-wenda-detail.css" />
+	</head>
+	<style type="text/css">
+		.center{
+			padding: 0.2rem 0.5rem;
+		}
+		.article_title{
+			padding-top: 0.2rem;
+			margin-bottom:0.3rem;
+		}
+		.article_title p{
+			font-size: 0.4rem;
+			color: #333333;
+			line-height: 0.5rem;
+		}
+		.article_huifu textarea{
+			font-size: 0.373333333rem;
+			padding:0.2rem 0.25rem;
+			width: 100%;
+			height: 3rem;
+		}
+	</style>
+	<body class="b-f">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left c-f"></a>
+			<h1 class="mui-title">问题详情</h1>
+		</header>
+		<div class="center mui-content b-f">
+			<div class="article_title">
+				<p>交了定金，发现没有购房资格，定金还能退么？</p>
+			</div>
+			<div class="article_huifu">
+				<textarea name="" rows=""   id="textan" cols=""placeholder="添加回答"></textarea>
+			</div>
+		</div>
+		<button class="new_btn">提交</button>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+
+
+
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            console.log(url)
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+
+        var base = 'http://jd.zyeo.net/'
+        url = base + 'index.php/app/question/sub_answer'
+        var token = java.getToken1()
+		var u = GetRequest()
+		console.log(u)
+        var  question_id  = u['id']
+
+        //console.log(question_id)
+
+
+        // var textan = document.getElementById("textan");
+
+
+        var content	=$('#textan').text();
+		$(".new_btn").click(function(){
+
+			//var base = java.getBase()
+			if(content==""){
+				mui.toast('请输入内容')
+				return
+			}
+
+            $.ajax({
+                url: url,
+                type: "post",
+                data: {
+                    "question_id": question_id,
+					"content":content,
+					"token":token
+                },
+                datatype: "json",
+                success: function (data) {
+                    // console.log(that.url)
+					if(check(data)){
+                        mui.toast('提交成功')
+                        window.history.back();
+					}
+
+                    // var temp = JSON.parse(data)
+                    // //console.log(temp.data)
+                    // that.dat = temp.data
+                    //
+                    // var time = new Date()
+                    //
+                    // //console.log(time.getMilliseconds())
+                    // // console.log(time.getMinutes())
+                    // // console.log(time.getSeconds())
+                    // // console.log(time.getTime())
+                    // //this.cur = time.getMilliseconds()
+                    // //console.log(time.getMilliseconds())
+                    // //console.log(typeof temp.data)
+                    // console.log(data)
+
+                },
+                error: function () {
+                   mui.toast('提交失败')
+                }
+            })
+
+
+		})
+
+
+	</script>
+</html>

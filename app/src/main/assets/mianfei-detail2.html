@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>免费看房详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/mianfei-detail.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class=" mui-icon mui-icon-arrowleft mui-pull-left finish c-f"></a>
+			<h1 class="mui-title">银河生生银河居</h1>
+		</header>
+		<!--详情内容-->
+		<div class="detail_mess mui-content b-f">
+			<p class="title">银河生生银河居</p>
+			<p>详情咨询售楼部</p>
+			<p class="leixing"><span>免费看车</span><span>免费看车</span></p>
+            <div class="detail_mess_span">
+                <div class="detail_mess_span1">
+                    <img src="images/quereng.png" />
+                    <span>免费专车</span>
+                </div>
+                <div class="detail_mess_span1">
+                    <img src="images/quereng.png" />
+                    <span>一对一来回接送</span>
+                </div>
+                <div class="detail_mess_span1">
+                    <img src="images/quereng.png" />
+                    <span>随时看房</span>
+                </div>
+            </div>
+			<div class="detail_mess_date clear">
+				<div class="lists_images_left f-l">
+					<img src="images/shijian.png" />
+					<span id="countdown">4天7小时32分54秒</span>
+				</div>
+				<div class="lists_images_rigth f-r">
+					<img src="images/wode.png" />
+					<span><em class="count"></em>人报名</span>
+				</div>
+			</div>
+			<div class="detail_mess_address">
+				<span>楼盘位置 :</span>
+				<span class="address">河南省大学科技园</span>
+			</div>
+		</div>
+		<!--电话-->
+		<div class="detail_phone clear b-f">
+			<div class="detail_phone_left f-l">
+				<p class="phone_num">400-800-6565</p>
+				<p>最新政策，更多优惠详情，请致电售楼处</p>
+			</div>
+			<div class="detail_phone_right f-r">
+				<img src="images/dianhua.png" />
+			</div>
+		</div>
+		<!--活动楼盘-->
+		<div class="house b-f">
+			<div class="house_title">
+				<p>活动楼盘</p>
+			</div>
+			<div class="house_wrap">
+				<a href="">
+					<div class="lists clear">
+						<div class="lists_left f-l">
+							<img src="images/42.png" />
+						</div>
+						<div class="lists_right f-r">
+							<div class="lists_right_text1">
+								<p>西湖春天 电梯小高层 1楼 南...</p>
+							</div>
+							<div class="lists_right_text2 clear">
+								<span class="f-l">慧济-慧济区</span>
+								<span class="f-r"><em>9900</em>元/m²</span>
+							</div>
+							<div class="lists_right_text3">
+								<span>三室两厅<em>116m²</em></span>
+							</div>
+							<div class="lists_right_text4 clear">
+								<span class="f-l">品质小区</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--活动规则-->
+		<div class="rule b-f">
+			<div class="rule_title">
+				<p>活动规则</p>
+			</div>
+			<div class="rule_wrap">
+				<p class="guize">1.报名成功后48小时内会接到工作人员的电话</p>
+
+			</div>
+			<div class="rule_title2">
+				<p>免责申明</p>
+				<p class="more_mess">报名成功后48小时内会接到工作人员的电约车成功后会收到通知信息看房结束后乘坐专车返回上车地点看房结束后乘坐专车返回上车地点</p>
+			</div>
+			<!--<div class="more" data_id="1">
+				<span>查看更多</span>
+				<span class="mui-icon mui-icon-arrowdown"></span>
+			</div>-->
+		</div>
+		<!--底部按钮-->
+		<div class="detail_bottom">
+			<div class="detail_shou f-l" data_id="1">
+				<img src="images/dianhua2.png" />
+				<span>电话咨询</span>
+			</div>
+			<div class="detail_gou f-l">
+
+				<span>免费预约看车</span>
+			</div>
+		</div>
+		<!--获取弹窗-->
+		<div class="pay_wrap">
+			<div class="pay">
+				<div class="pay_title">
+					<span>获取优惠</span>
+					<img src="images/cuohao.png" class="pay_close" />
+				</div>
+				<div class="pay1">
+					<input type="text" placeholder="请输入您的手机号" class="phone" />
+					<div class="clear code_wrap">
+						<input type="text" placeholder="请输入验证码" class="code f-l" />
+						<button class="codebtn f-r">获取验证码</button>
+					</div>
+					<p class="pay1_btn">确定</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/user.js" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript">
+        var http = 'http://www.jdfcw.com';
+		var view_detail = http + '/index.php/app/indexnewhouse/view_detail'
+
+        var ids = java.getId()
+
+        // var base = java.getBase()
+        var token = ""//java.getToken1()
+
+        $(".finish").click(function () {
+            java.finis()
+        })
+
+        //判断是否为手机号
+        function isPoneAvailable(phone) {
+            var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+            if(!myreg.test(phone)) {
+                mui.toast("请输入正确的手机号")
+            } else {
+                //AJAX
+                var time = 60;
+                request(code, "POST", {
+                    mobile: phone
+                }, function(res) {
+                    if(res.code == 202) {
+                        mui.toast("手机号已被注册");
+                    } else if(res.code == 200) {
+                        mui.toast("发送成功");
+                        var num = setInterval(function() {
+                            $(".codebtn").text(time);
+                            time--;
+                            if(time == 0) {
+                                clearInterval(num);
+                                $(".codebtn").text("获取验证码");
+                            }
+                        }, 1000);
+                    }
+                }, function(err) {
+                    mui.toast("获取失败");
+                });
+            }
+        }
+
+
+
+        function request(URL, type, formdata, succCallback, errCallback) {
+            $.ajax({
+                type: "post",
+                url: URL,
+                data: formdata,
+                dataType: 'json',
+                headers: {
+                    Accept: "application/json; charset=utf-8"
+                },
+                beforeSend: function(XMLHttpRequest) {
+                    var lists = '<div class="loading_images hide"><img src="images/ajax-loader-overlay.gif"/></div>';
+                    $("body").append(lists);
+                    $(".loading_images").show();
+                },
+                success: function(res) {
+                    $(".loading_images").hide();
+                    succCallback(res);
+                },
+                errCallback: function(err) {
+                    $(".loading_images").hide();
+                    errCallback(err)
+                }
+            });
+        }
+
+
+
+		//var ids = GetQueryString("id");
+
+		request(view_detail, "post", {
+			id: ids
+		}, function(res) {
+			console.log(res);
+			var datas = res.data;
+			//标题
+			$(".mui-title").text(datas.title);
+			$(".title").text(datas.title);
+            //类型
+//			var leixing = datas.leixing;
+//			var leixing_lists = '';
+//			for(var i = 0; i < leixing.length; i++) {
+//				leixing_lists += '<span>' + leixing[i] + '</span>';
+//			}
+//			$(".leixing").html(leixing_lists);
+
+            //优劣
+            var youlie = datas.youlie;
+            var youlie_lists = '';
+            for(var a = 0; a < youlie.length; a++) {
+                youlie_lists += '<span>' + youlie[a] + '</span>';
+            }
+            $(".leixing").html(youlie_lists);
+			//人数
+			$(".count").text(datas.count);
+			//地址
+			$(".address").text(datas.addr);
+			//电话
+			$(".phone_num").text(datas.mobile);
+			//活动楼盘
+			var loupan_zhong = '';
+			if(datas.loupan.select == 1) {
+				loupan_zhong = "住宅";
+			} else if(datas.loupan.select == 2) {
+				loupan_zhong = "别墅"
+			} else if(datas.loupan.select == 3) {
+				loupan_zhong = "商业"
+			} else if(datas.loupan.select == 4) {
+				loupan_zhong = "复式"
+			}
+			//房源类型
+			var loupan_type = '';
+			if(datas.loupan.is_onsale == 1) {
+				loupan_type = "期房未收";
+			} else if(datas.loupan.is_onsale == 2) {
+				loupan_type = "期房在售"
+			} else if(datas.loupan.is_onsale == 3) {
+				loupan_type = "期房已售完"
+			}
+			var huodong = '<a href=""><div class="lists clear"><div class="lists_left f-l"><img src="' + paths + '' + datas.loupan.img + '" /></div><div class="lists_right f-r"><div class="lists_right_text1"><p>' + datas.loupan.title + '</p></div><div class="lists_right_text2 clear"><span class="f-l">' + datas.loupan.area + '-' + datas.loupan.business + '</span><span class="f-r"><em>' + datas.loupan.price + '</em>元/m²</span></div><div class="lists_right_text3"><span>' + loupan_zhong + '<em>' + datas.loupan.mianji + 'm²</em></span></div><div class="lists_right_text4 clear"><span class="f-l">' + loupan_type + '</span></div></div></div></a>';
+			$(".house_wrap").html(huodong);
+			//活动规则
+			$(".guize").text(datas.guize);
+			//免责声明
+			$(".more_mess").text(datas.sm);
+			//电话咨询
+			$(".detail_shou").attr("data_phone", datas.mobile);
+			//预约看房
+			$(".detail_gou").attr("data_id", datas.id);
+			//倒计时
+			$("#countdown").attr("data_date", datas.start_date);
+			countTime();
+		}, function(err) {
+			mui.toast("获取失败");
+		})
+		//		$(".more").click(function() {
+		//			var data_id = $(this).attr("data_id");
+		//			if(data_id == "1") {
+		//				$(this).find("span").eq(0).text("收起");
+		//				$(this).find("span").eq(1).removeClass();
+		//				$(this).find("span").eq(1).addClass("mui-icon mui-icon-arrowup");
+		//				$(this).attr("data_id", "2");
+		//			} else {
+		//				$(this).find("span").eq(0).text("查看更多");
+		//				$(this).find("span").eq(1).removeClass();
+		//				$(this).find("span").eq(1).addClass("mui-icon mui-icon-arrowdown");
+		//				$(this).attr("data_id", "1");
+		//			}
+		//		});
+		//点击电话咨询
+		$(".detail_shou").click(function() {
+			var mobile = $(this).attr("data_phone");
+			// window.location.href = 'tel:' + mobile + '';
+            java.callphone(mobile)
+		})
+		//点击预约看房
+		$(".detail_gou").click(function() {
+
+            if(token==null||token ==""){
+                java.login()
+                return
+            }
+
+			$(".pay_wrap").show();
+		});
+		//点击关闭
+		$(".pay_close").click(function() {
+			$(".pay_wrap").hide();
+			$(".pay_wrap input").val("");
+		});
+		//点击获取验证码
+		$(".codebtn").click(function() {
+			var phone = $(".phone").val();
+			if(phone == "") {
+				mui.toast("请输入手机号");
+			} else {
+				isPoneAvailable(phone);
+			}
+		});
+		//点击确认按钮
+		$(".pay1_btn").click(function() {
+			//获取手机号 验证码
+			var phone = $(".phone").val();
+			var code = $(".code").val();
+			var ids = $(".detail_gou").attr("data_id");
+			if(phone == "" || code == "") {
+				mui.toast("请填写完整信息");
+			} else {
+				request(view_bm, "post", {
+					token: token,
+					view_id: ids,
+					mobile: phone,
+					code: code
+				}, function(res) {
+					mui.toast(res.message);
+					if(res.code == 200) {
+						$(".pay_wrap").hide();
+						$(".pay_wrap input").val("");
+					}
+				}, function(err) {
+					mui.toast("获取失败");
+				})
+			}
+		});
+
+		//倒计时
+function countTime() {//获取当前时间
+
+			var date = new Date();
+			var now = date.getTime();
+			//设置截止时间  
+			var str = $("#countdown").attr("data_date");
+
+			var endDate = new Date(str);
+			var end = endDate.getTime();
+
+			//时间差  
+			var leftTime = end - now;
+			//定义变量 d,h,m,s保存倒计时的时间  
+			var d, h, m, s;
+
+			if(leftTime >= 0) {
+				d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+				h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+				m = Math.floor(leftTime / 1000 / 60 % 60);
+				s = Math.floor(leftTime / 1000 % 60);
+				$("#countdown").text(d + "天" + h + "时" + m + "分" + s + "秒");
+			} else {
+				$("#countdown").text("已结束");
+			}
+
+			//递归每秒调用countTime方法，显示动态时间效果  
+			setTimeout(countTime, 1000);
+		}
+	</script>
+
+</html>

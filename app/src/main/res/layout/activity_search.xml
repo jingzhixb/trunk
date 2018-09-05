@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.ershoufang.ui.activity.SearchActivity">
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="@dimen/sp_15"
+        android:paddingLeft="@dimen/dp_20"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_15"
+            android:paddingRight="@dimen/dp_10"
+            android:drawableRight="@drawable/sanjiao"
+            android:id="@+id/xinfang"
+            android:background="@drawable/shape_tuijian8"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/white"
+            android:text="新房"
+            android:layout_width="100dp"
+            android:layout_height="30dp" />
+
+
+        <EditText
+            android:textColorHint="@color/white"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableLeft="@drawable/search"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_15"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:id="@+id/input"
+            android:background="@drawable/shape_tuijian8"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/white"
+            android:hint="搜索"
+            android:layout_width="180dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_15"
+            android:id="@+id/quxiao"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:textColor="#999"
+        android:text="热门搜索"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/id_flowlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+        </com.zhy.view.flowlayout.TagFlowLayout>
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
